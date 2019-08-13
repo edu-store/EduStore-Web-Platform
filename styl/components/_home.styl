@@ -1,0 +1,89 @@
+header
+    max-width: 100%
+    height 100vh
+    background: url('../images/hero-background.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+
+.container__menu
+    position relative
+    z-index: 2
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    grid-template-areas: 'Container__Logo . Container__menu Container__menu'
+    align-items: center
+    justify-content: space-between
+    padding: 1.5em
+    max-width : max-width
+    margin: 0 auto
+.Container__Logo
+    
+    grid-area:Container__Logo
+    & a
+        display: inline-flex
+        align-items: center
+        color: white
+        
+        & img
+            width: auto
+            height 2.5em
+            cursor: pointer
+            margin-right: 1em
+        & span
+            font-size: font-size-paragrah
+            font-weight: bold
+.Container__menu
+    grid-area: Container__menu
+    text-align: right
+
+    & a
+        color: white
+.btns__menu
+    & .btn
+        margin-left: 4em
+
+.Hero
+    text-align: center
+    
+.Container__Hero
+    position relative
+    z-index: 3
+    display: flex
+    justify-content: center
+    align-items: center
+    height 90%
+    & .Hero__texts
+        margin: auto auto
+        h1
+            font-size: 2.5em
+            color: white
+            font-weight: bold
+            margin-bottom: .3em
+        p
+            font-size: font-size-paragrah
+            margin-bottom: 1em
+            color:colorBlue
+    & .Hero__search
+            background-color: white
+            border-radius: 5px
+            padding: 1em 5em
+            width: 40em
+            &::placeholder
+                text-align: left
+                padding: 1em
+                font-family: 'Roboto'
+                color:dark__grey
+.overlay
+    background: rgba(color__dark,.9)
+    position: absolute
+    top: 0
+    bottom: 0
+    right : 0
+    left : 0
+
+
+
+
+

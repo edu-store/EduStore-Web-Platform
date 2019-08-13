@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+body,
+p,
+h1 {
+  margin: 0px;
+  color: #c2c2c2;
+  font-family: 'Roboto', sans-serif;
+}
+body::-webkit-scrollbar,
+p::-webkit-scrollbar,
+h1::-webkit-scrollbar {
+  width: 15px;
+  height: 5px;
+}
+body::-webkit-scrollbar-thumb,
+p::-webkit-scrollbar-thumb,
+h1::-webkit-scrollbar-thumb {
+  background: #c2c2c2;
+  border-radius: 10px;
+  transition: background ease-in-out 0.5s;
+}
+body::-webkit-scrollbar-thumb:hover,
+p::-webkit-scrollbar-thumb:hover,
+h1::-webkit-scrollbar-thumb:hover {
+  background: #102434;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  display: inline;
+  list-style: none;
+}
+.btn {
+  padding: 1em 4em;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-white {
+  color: #3e80ff;
+  background: #fff;
+}
+.btn-blue {
+  color: #fff;
+  background: #3e80ff;
+}
+.border-none {
+  border: none;
+}
+.btn,
+input {
+  outline: 0;
+}
+header {
+  max-width: 100%;
+  height: 100vh;
+  background: url("../images/hero-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container__menu {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 'Container__Logo . Container__menu Container__menu';
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.Container__Logo {
+  grid-area: Container__Logo;
+}
+.Container__Logo a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+}
+.Container__Logo a img {
+  width: auto;
+  height: 2.5em;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.Container__Logo a span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.Container__menu {
+  grid-area: Container__menu;
+  text-align: right;
+}
+.Container__menu a {
+  color: #fff;
+}
+.btns__menu .btn {
+  margin-left: 4em;
+}
+.Hero {
+  text-align: center;
+}
+.Container__Hero {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+.Container__Hero .Hero__texts {
+  margin: auto auto;
+}
+.Container__Hero .Hero__texts h1 {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.Container__Hero .Hero__texts p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #3e80ff;
+}
+.Container__Hero .Hero__search {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1em 5em;
+  width: 40em;
+}
+.Container__Hero .Hero__search::placeholder {
+  text-align: left;
+  padding: 1em;
+  font-family: 'Roboto';
+  color: #c2c2c2;
+}
+.overlay {
+  background: rgba(16,36,52,0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
