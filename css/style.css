@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
 body,
 p,
 h1 {
@@ -34,7 +37,7 @@ li {
 }
 .btn {
   padding: 1em 4em;
-  border-radius: 5px;
+  border-radius: 7px;
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -61,6 +64,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 1em;
 }
 .container__menu {
   position: relative;
@@ -104,6 +108,7 @@ header {
 }
 .Hero {
   text-align: center;
+  padding: 1.5em;
 }
 .Container__Hero {
   position: relative;
@@ -127,17 +132,34 @@ header {
   margin-bottom: 1em;
   color: #3e80ff;
 }
-.Container__Hero .Hero__search {
+.Container__Hero .hero__form {
   background-color: #fff;
-  border-radius: 5px;
-  padding: 1em 5em;
-  width: 40em;
+  border-radius: 7px;
+  padding: 1em;
+}
+.Container__Hero .Hero__search {
+  width: 85%;
+  height: 2.5em;
 }
 .Container__Hero .Hero__search::placeholder {
   text-align: left;
   padding: 1em;
   font-family: 'Roboto';
+  font-size: 1.2em;
   color: #c2c2c2;
+}
+.Hero__icon__search {
+  height: 35px;
+  width: 35px;
+  background-image: url("../images/search.svg");
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+}
+.Hero__icon__search:focus {
+  outline: none;
 }
 .overlay {
   background: rgba(16,36,52,0.9);
@@ -146,4 +168,10 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
+}
+@media screen and (max-width: 425px) {
+  .container__menu {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'Container__Logo Container__menu';
+  }
 }

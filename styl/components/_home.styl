@@ -5,6 +5,7 @@ header
     background-repeat: no-repeat
     background-size: cover
     background-position: center
+    margin-bottom: 1em
 
 
 .container__menu
@@ -15,17 +16,17 @@ header
     grid-template-areas: 'Container__Logo . Container__menu Container__menu'
     align-items: center
     justify-content: space-between
-    padding: 1.5em
+    padding: padding__container
     max-width : max-width
     margin: 0 auto
 .Container__Logo
-    
+
     grid-area:Container__Logo
     & a
         display: inline-flex
         align-items: center
         color: white
-        
+
         & img
             width: auto
             height 2.5em
@@ -46,6 +47,7 @@ header
 
 .Hero
     text-align: center
+    padding: padding__container
     
 .Container__Hero
     position relative
@@ -65,16 +67,34 @@ header
             font-size: font-size-paragrah
             margin-bottom: 1em
             color:colorBlue
-    & .Hero__search
+    & .hero__form
+
             background-color: white
-            border-radius: 5px
-            padding: 1em 5em
-            width: 40em
-            &::placeholder
-                text-align: left
-                padding: 1em
-                font-family: 'Roboto'
-                color:dark__grey
+            border-radius: border-radius
+            padding: 1em
+    & .Hero__search
+        width: 85%
+        height 2.5em
+        &::placeholder
+            text-align: left
+            padding: 1em
+            font-family: 'Roboto'
+            font-size: font-size-paragrah
+            color:dark__grey
+
+
+.Hero__icon__search
+    height 35px
+    width: 35px
+    background-image: url('../images/search.svg')
+    background-size: 35px 35px
+    background-repeat: no-repeat
+    background-color: transparent
+    border: none
+    vertical-align: middle
+    &:focus
+        outline: none
+
 .overlay
     background: rgba(color__dark,.9)
     position: absolute
@@ -82,6 +102,12 @@ header
     bottom: 0
     right : 0
     left : 0
+
+@media screen and (max-width: 425px)
+    .container__menu
+        grid-template-columns: repeat(2,1fr)
+        grid-template-areas: 'Container__Logo Container__menu'
+
 
 
 
