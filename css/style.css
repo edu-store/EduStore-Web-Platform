@@ -57,6 +57,137 @@ li {
 input {
   outline: 0;
 }
+.McButton {
+  position: relative;
+  width: 45px;
+  height: 25px;
+  display: none;
+}
+b {
+  position: absolute;
+  left: 0;
+  width: 44px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+b:nth-child(1) {
+  top: 0;
+}
+b:nth-child(2) {
+  top: 50%;
+}
+b:nth-child(3) {
+  top: 100%;
+}
+b:nth-child(1).active {
+  animation: 0.3s forwards menu-positivo;
+  animation-delay: 0.3s;
+  top: 50%;
+}
+b:nth-child(2).active,
+b:nth-child(3).active {
+  top: 50%;
+  animation: 0.3s forwards menu-negativo;
+  animation-delay: 0.3s;
+}
+@-moz-keyframes menu-positivo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(135deg);
+  }
+}
+@-webkit-keyframes menu-positivo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(135deg);
+  }
+}
+@-o-keyframes menu-positivo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(135deg);
+  }
+}
+@keyframes menu-positivo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(135deg);
+  }
+}
+@-moz-keyframes menu-negativo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-135deg);
+  }
+}
+@-webkit-keyframes menu-negativo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-135deg);
+  }
+}
+@-o-keyframes menu-negativo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-135deg);
+  }
+}
+@keyframes menu-negativo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-135deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
 header {
   max-width: 100%;
   height: 100vh;
@@ -74,7 +205,7 @@ header {
   grid-template-areas: 'Container__Logo . Container__menu Container__menu';
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 1em;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -108,7 +239,7 @@ header {
 }
 .Hero {
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 .Container__Hero {
   position: relative;
@@ -170,8 +301,68 @@ header {
   left: 0;
 }
 @media screen and (max-width: 425px) {
+  .Container__menu {
+    text-align: center;
+  }
   .container__menu {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'Container__Logo Container__menu';
   }
+  .container__menu a {
+    color: #3e80ff;
+  }
+  .btns__menu {
+    display: none;
+    background-color: #fff;
+    border-radius: 7px;
+    position: absolute;
+    right: 10px;
+    padding: 1em;
+    transition: 1s ease-in;
+  }
+  .btns__menu li:nth-child(2) button {
+    margin: 0 auto;
+  }
+  .btns__menu ul,
+  .btns__menu li {
+    display: block;
+    margin: 1em 1em;
+  }
+  .btns__menu.active {
+    display: block;
+  }
+  .McButton {
+    display: block;
+  }
+@-moz-keyframes openMenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+}
+@-webkit-keyframes openMenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+}
+@-o-keyframes openMenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+}
+@keyframes openMenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 100%;
+    }
+}
 }

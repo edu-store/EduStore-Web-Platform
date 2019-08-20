@@ -104,11 +104,38 @@ header
     left : 0
 
 @media screen and (max-width: 425px)
+    .Container__menu
+        text-align: center
     .container__menu
         grid-template-columns: repeat(2,1fr)
-        grid-template-areas: 'Container__Logo Container__menu'
+        
+        & a
+            color:colorBlue
+           
+    .btns__menu
+        display: none
+        background-color: white
+        border-radius: border-radius
+        position absolute
+        right 10px
+        padding: padding__container
+        transition: 1s ease-in
+        // animation openMenu .5s ease 0 alternate forwards
+        & li:nth-child(2) button
+            margin: 0 auto
 
-
+        & ul, li
+            display: block
+            margin:  1em 1em
+        &.active
+            display: block
+    @keyframes openMenu
+        from
+            height : 0
+        to
+            height: 100%
+    .McButton
+        display block
 
 
 

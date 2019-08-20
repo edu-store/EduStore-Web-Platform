@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,12 +26,17 @@
           </a>
         </div>
         <nav class="Container__menu">
-          <ul class="btns__menu">
+          <a class="McButton" data="hamburger-menu" id="McButton">
+            <b class="" id="McBar1"></b>
+            <b id="McBar2"></b>
+            <b class="" id="McBar3"></b>
+          </a>
+          <ul class="btns__menu" id="btns__menu">
             <li>
               <a href="#">Login</a>
             </li>
             <li>
-              <a href="#"><button class="btn btn-white">Sign Up</button></a>
+              <button class="btn btn-white" id="btn__Sign__up">Sign Up</button>
             </li>
           </ul>
         </nav>
@@ -46,7 +51,7 @@
             <input
               class="Hero__search border-none"
               type="text"
-              placeholder="Busca una app o un recurso"
+              placeholder="Escribe el nombre de una app o un recurso"
             />
             <button id="Search-hero" class="Hero__icon__search"></button>
           </form>
