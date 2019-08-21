@@ -1,6 +1,6 @@
 *
     box-sizing: border-box
-body, p, h1
+body, p, h1, figure
     margin: 0px
     color:dark__grey
     font-family: 'Roboto', sans-serif;
@@ -25,14 +25,23 @@ ul, li
     border: none
     font-weight: bold
     cursor pointer
+    &.btn-corto
+        padding: 1.5em 1.5em
+        border: .5px solid dark__grey
 .btn-white
         color:colorBlue
         background: white
 .btn-blue
         color: white
         background: colorBlue
+
 .border-none
     border: none
 
 .btn, input
     outline: 0
+
+.Titles__sections
+    grid-area: Titles__sections
+    color: color__dark
+    font-size: font-size-titles
