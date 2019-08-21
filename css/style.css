@@ -243,7 +243,7 @@ header {
 }
 .Container__Hero {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,15 +307,13 @@ header {
   .container__menu {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container__menu a {
-    color: #3e80ff;
-  }
   .btns__menu {
     display: none;
     background-color: #fff;
     border-radius: 7px;
     position: absolute;
     right: 10px;
+    top: 63%;
     padding: 1em;
     transition: 1s ease-in;
   }
@@ -329,6 +327,10 @@ header {
   }
   .btns__menu.active {
     display: block;
+  }
+  .btns__menu a {
+    color: #3e80ff;
+    font-weight: bold;
   }
   .McButton {
     display: block;
@@ -365,4 +367,11 @@ header {
       height: 100%;
     }
 }
+}
+@media screen and (max-width: 320px) {
+  .Hero__icon__search {
+    height: 20px;
+    width: 20px;
+    background-size: 20px 20px;
+  }
 }

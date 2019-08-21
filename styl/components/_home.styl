@@ -51,7 +51,7 @@ header
     
 .Container__Hero
     position relative
-    z-index: 3
+    z-index: 1
     display: flex
     justify-content: center
     align-items: center
@@ -108,19 +108,15 @@ header
         text-align: center
     .container__menu
         grid-template-columns: repeat(2,1fr)
-        
-        & a
-            color:colorBlue
-           
     .btns__menu
         display: none
         background-color: white
         border-radius: border-radius
         position absolute
         right 10px
+        top: 63%
         padding: padding__container
         transition: 1s ease-in
-        // animation openMenu .5s ease 0 alternate forwards
         & li:nth-child(2) button
             margin: 0 auto
 
@@ -129,6 +125,9 @@ header
             margin:  1em 1em
         &.active
             display: block
+        & a
+            color: colorBlue
+            font-weight: bold
     @keyframes openMenu
         from
             height : 0
@@ -136,6 +135,12 @@ header
             height: 100%
     .McButton
         display block
+
+@media screen and (max-width: 320px)
+    .Hero__icon__search
+        height: 20px;
+        width: 20px;
+        background-size: 20px 20px
 
 
 
