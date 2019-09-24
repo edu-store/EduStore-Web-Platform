@@ -218,8 +218,8 @@ header {
   grid-template-areas: 'Container__Logo . Container__menu Container__menu';
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
-  max-width: 1024px;
+  padding: 1.5em;
+  max-width: 1324px;
   margin: 0 auto;
 }
 .Container__Logo {
@@ -252,7 +252,7 @@ header {
 }
 .Hero {
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
 }
 .Container__Hero {
   position: relative;
@@ -313,7 +313,7 @@ header {
   right: 0;
   left: 0;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .Container__menu {
     text-align: center;
   }
@@ -327,7 +327,7 @@ header {
     position: absolute;
     right: 10px;
     top: 63%;
-    padding: 1em;
+    padding: 1.5em;
     transition: 1s ease-in;
   }
   .btns__menu li:nth-child(2) button {
@@ -389,7 +389,7 @@ header {
   }
 }
 .Section__App_and_resources {
-  padding: 1em;
+  padding: 1.5em;
   background-color: #fff;
   margin: 6em 0;
 }
@@ -397,11 +397,12 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "Titles__sections . . Buttons__directions__App" "Container__Menu__category  Container__Resources  Container__Resources Container__Resources";
-  max-width: 1024px;
+  max-width: 1324px;
   margin: 0 auto;
 }
 .Buttons__directions__App {
   grid-area: Buttons__directions__App;
+  text-align: right;
 }
 .Buttons__directions__App button {
   margin-right: 1em;
@@ -414,6 +415,7 @@ header {
   font-size: 1.5em;
   font-weight: bold;
   padding: 0.8em;
+  border-radius: 0 7px 7px 0;
 }
 .Menu__category_items li:hover {
   background-color: #3e80ff;
@@ -421,11 +423,16 @@ header {
 }
 .Container__Resources {
   grid-area: Container__Resources;
-  max-width: 20em;
+  text-align: right;
+}
+.Container__Resource {
+  display: inline-block;
+  max-width: 17em;
   height: auto;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 5px 20px 1px #c2c2c2;
+  margin: 1.5em;
 }
 .Container__Resource_Img img {
   width: 100%;
@@ -433,15 +440,15 @@ header {
 }
 .Container__texts_resource {
   text-align: left;
-  padding: 3em 1.5em;
+  padding: 2.5em 1.5em;
 }
 .Container__texts_resource h1 {
   color: #102434;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .Container__texts_resource p {
   font-size: 1.2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 .rating {
   unicode-bidi: bidi-override;
@@ -469,4 +476,24 @@ header {
 }
 span {
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .Container__Resource {
+    max-width: 15em;
+    margin: 0.5em;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Container__App_and_resources {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "Titles__sections Buttons__directions__App" "Container__Resources Container__Resources";
+    max-width: 1324px;
+    margin: 0 auto;
+  }
+  .Container__Menu__category {
+    display: none;
+  }
+  .Container__Resources {
+    text-align: center;
+  }
 }
