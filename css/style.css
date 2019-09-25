@@ -437,6 +437,7 @@ header {
 .Container__Resource_Img img {
   width: 100%;
   height: auto;
+  max-height: 10em
 }
 .Container__texts_resource {
   text-align: left;
