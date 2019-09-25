@@ -1,0 +1,95 @@
+.Section__App_and_resources
+    padding: padding__container
+    background-color: white
+    margin: 6em 0
+.Container__App_and_resources
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    // grid-template-rows: repeat(3, auto)
+    grid-template-areas: "Titles__sections . . Buttons__directions__App" "Container__Menu__category  Container__Resources  Container__Resources Container__Resources"
+    "Container__Menu__category  Container__Resources Container__Resources Container__Resources ";
+    max-width max-width
+    margin: 0 auto
+.Buttons__directions__App
+    grid-area: Buttons__directions__App
+    text-align: right
+    & button
+        margin-right: 1em
+.Container__Menu__category
+    grid-area: Container__Menu__category
+.Menu__category_items
+    & li
+        display block
+        font-size: font-size-subtitles
+        font-weight: bold
+        padding: .8em
+        border-radius: 0 border-radius border-radius 0
+        &:hover
+            background-color: colorBlue
+            color: white
+
+.Container__Resources
+    grid-area: Container__Resources
+    text-align: right
+.Container__Resource
+    display: inline-block
+    max-width 17em
+    height auto
+    overflow: hidden
+    border-radius: 20px
+    box-shadow: 0 5px 20px 1px rgba(194,194,194,1);
+    margin: 1.5em
+.Container__Resource_Img
+    & img
+        width: 100%
+        height auto
+.Container__texts_resource
+    text-align: left
+    padding: 2.5em 1.5em
+    & h1
+        color: color__dark
+        margin-bottom: .5em
+    & p
+        font-size: font-size-paragrah
+        margin-bottom: .5em
+
+
+.rating
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: inline-block
+  margin-right: .5em
+  color: color__yellow
+
+.rating > span
+  display: inline-block;
+  position: relative;
+  width: 1.5em;
+  height 1em
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before
+   content: "\2605";
+   position: absolute;
+
+.rating__count
+     display: inline-block
+     & span:nth-child(1)
+         color: color__dark
+    & span
+         font-weight: bold
+
+@media screen and (max-width: 768px)
+    .Container__Resource
+        max-width 15em
+        margin: .5em
+@media screen and (max-width: 426px)
+    .Container__App_and_resources
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-areas: "Titles__sections Buttons__directions__App""Container__Resources Container__Resources";
+        max-width max-width
+        margin: 0 auto
+    .Container__Menu__category
+        display: none
+    .Container__Resources
+        text-align: center
