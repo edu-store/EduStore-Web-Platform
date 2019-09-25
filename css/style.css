@@ -260,7 +260,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 100vh;
 }
 .Container__Hero .Hero__texts {
   margin: auto auto;
@@ -437,7 +437,7 @@ header {
 .Container__Resource_Img img {
   width: 100%;
   height: auto;
-  max-height: 10em
+  max-height: 9em;
 }
 .Container__texts_resource {
   text-align: left;
