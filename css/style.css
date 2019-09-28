@@ -225,18 +225,18 @@ header {
 .Container__Logo {
   grid-area: Container__Logo;
 }
-.Container__Logo a {
+.container__logo {
   display: inline-flex;
   align-items: center;
   color: #fff;
 }
-.Container__Logo a img {
+.container__logo img {
   width: auto;
   height: 2.5em;
   cursor: pointer;
   margin-right: 1em;
 }
-.Container__Logo a span {
+.container__logo span {
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -497,4 +497,19 @@ span {
   .Container__Resources {
     text-align: center;
   }
+}
+.footer,
+.container__footer {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1324px;
+  padding: 1.5em;
+}
+.footer__name,
+.footer {
+  color: #102434;
+}
+.container__logo {
+  padding-bottom: 1.5em;
 }
