@@ -10,25 +10,16 @@ figure {
   color: #c2c2c2;
   font-family: 'Roboto', sans-serif;
 }
-body::-webkit-scrollbar,
-p::-webkit-scrollbar,
-h1::-webkit-scrollbar,
-figure::-webkit-scrollbar {
-  width: 15px;
+::-webkit-scrollbar {
+  width: 10px;
   height: 5px;
 }
-body::-webkit-scrollbar-thumb,
-p::-webkit-scrollbar-thumb,
-h1::-webkit-scrollbar-thumb,
-figure::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #c2c2c2;
   border-radius: 10px;
   transition: background ease-in-out 0.5s;
 }
-body::-webkit-scrollbar-thumb:hover,
-p::-webkit-scrollbar-thumb:hover,
-h1::-webkit-scrollbar-thumb:hover,
-figure::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #102434;
 }
 a {
@@ -423,7 +414,20 @@ header {
 }
 .Container__Resources {
   grid-area: Container__Resources;
-  text-align: right;
+  overflow: scroll;
+  position: relative;
+}
+.Container__scroll {
+  white-space: nowrap;
+  margin: 4.3em;
+}
+.Container__scroll:hover .Container__Resource {
+  opacity: 0.3;
+}
+.Container__scroll .Container__Resource:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 0.5s;
 }
 .Container__Resource {
   display: inline-block;
@@ -433,6 +437,11 @@ header {
   border-radius: 20px;
   box-shadow: 0 5px 20px 1px #c2c2c2;
   margin: 1.5em;
+  cursor: pointer;
+  transition: 450ms all;
+}
+.Container__Resource:hover ~ .Container__Resource {
+  transform: translate3d(50px, 0, 0);
 }
 .Container__Resource_Img img {
   width: 100%;

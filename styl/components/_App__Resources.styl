@@ -30,7 +30,18 @@
 
 .Container__Resources
     grid-area: Container__Resources
-    text-align: right
+    overflow scroll
+    position relative
+.Container__scroll
+    white-space nowrap
+    margin 4.3em
+    &:hover .Container__Resource
+        opacity .3
+    & .Container__Resource:hover
+        transform scale(1.1)
+        opacity 1
+        transition .5s 
+
 .Container__Resource
     display: inline-block
     max-width 17em
@@ -39,6 +50,10 @@
     border-radius: 20px
     box-shadow: 0 5px 20px 1px rgba(194,194,194,1);
     margin: 1.5em
+    cursor pointer
+    transition 450ms all
+    &:hover ~ &
+        transform translate3d(50px, 0, 0)
 .Container__Resource_Img
     
     & img
