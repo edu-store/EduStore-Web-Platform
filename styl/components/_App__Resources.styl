@@ -32,15 +32,21 @@
     grid-area: Container__Resources
     overflow scroll
     position relative
+    overflow-x hidden
+    &:hover
+        overflow-x scroll
+    
 .Container__scroll
     white-space nowrap
     margin 4.3em
     &:hover .Container__Resource
         opacity .3
+        
     & .Container__Resource:hover
         transform scale(1.1)
         opacity 1
-        transition .5s 
+        transition .5s
+
 
 .Container__Resource
     display: inline-block
