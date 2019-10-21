@@ -521,6 +521,7 @@ span {
   flex-direction: row;
   justify-content: left;
   border-bottom: 1px solid #c2c2c2;
+  margin: 0 auto;
 }
 .Resource__detail__Container {
   overflow: hidden;
@@ -553,7 +554,4 @@ span {
 .footer__name,
 .footer {
   color: #102434;
-}
-.container__logo {
-  padding-bottom: 1.5em;
 }
