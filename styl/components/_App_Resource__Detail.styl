@@ -4,11 +4,10 @@
     display flex
     flex-direction row
     justify-content left
-    border-bottom 1px solid dark__grey
     margin 0 auto
 .Resource__detail__Container
     overflow hidden
-    border-radius 20px
+    border-radius 50px
     cursor pointer
     margin-right 2em
 
@@ -25,6 +24,40 @@
     font-size font-size-subtitles
     color colorBlue
     margin-bottom .3em
+
+.screenshot-section
+    margin 1em 1em
+.screenshot-section-container
+    max-width max-width
+    padding padding__container
+    margin 0 auto
+    border-top 1px solid dark__grey
+    border-bottom 1px solid dark__grey
+    & figure > img 
+        border-radius border-radius
+        margin-right .5em
+        height 31em
+        width auto
+.screenshot-container-imgs
+    display flex
+    flex-direction row
+    overflow scroll
+    overflow-x hidden
+    &:hover
+        overflow-x scroll
+.info-detail-container
+    max-width max-width
+    padding padding__container
+    margin 0 auto
+    & h1
+        color color__dark
+        margin-bottom .5em
+    & p
+        color colorBlue
+
+
+
+    
     
 
 
