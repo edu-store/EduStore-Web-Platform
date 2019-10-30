@@ -4,6 +4,7 @@ const btn__Sign__up = document.getElementById("btn__Sign__up");
 const McBar1 = document.getElementById("McBar1");
 const McBar2 = document.getElementById("McBar2");
 const McBar3 = document.getElementById("McBar3");
+const BtnAppAlgeo = document.getElementById("AppAlgeo");
 
 McButton.addEventListener("click", function() {
   btn__Sign__up.classList.remove("btn-white");
@@ -17,3 +18,8 @@ McButton.addEventListener("click", function() {
 
   McBar3.classList.toggle("active");
 });
+
+BtnAppAlgeo.addEventListener("click", function(){
+  window.location="http://127.0.0.1:5500/ResourceDetail.html"
+});
+
