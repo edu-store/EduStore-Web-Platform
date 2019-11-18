@@ -587,9 +587,8 @@ span {
   color: #3e80ff;
   padding: 0.5em;
 }
-.Resource__detail__info button {
-  margin-top: 5em;
-  display: flex;
+.container__rating {
+  margin-bottom: 5em;
 }
 .footer,
 .container__footer {
