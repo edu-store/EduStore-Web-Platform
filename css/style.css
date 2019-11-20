@@ -199,7 +199,7 @@ b:nth-child(3).active {
     transform: rotateZ(90deg);
   }
 }
-.header {
+.Container__Hero {
   max-width: 100%;
   height: 100vh;
   background: url("../images/hero-background.svg");
@@ -207,6 +207,9 @@ b:nth-child(3).active {
   background-size: cover;
   background-position: center;
   margin-bottom: 1em;
+}
+.header {
+  background: #102434;
 }
 .container__menu {
   position: relative;
@@ -216,7 +219,7 @@ b:nth-child(3).active {
   grid-template-areas: 'Container__Logo . Container__menu Container__menu';
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 1em;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -250,7 +253,7 @@ b:nth-child(3).active {
 }
 .Hero {
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 .Container__Hero {
   position: relative;
@@ -325,7 +328,7 @@ b:nth-child(3).active {
     position: absolute;
     right: 10px;
     top: 63%;
-    padding: 1.5em;
+    padding: 1em;
     transition: 1s ease-in;
   }
   .btns__menu li:nth-child(2) button {
@@ -381,13 +384,13 @@ b:nth-child(3).active {
 }
 @media screen and (max-width: 320px) {
   .Hero__icon__search {
-    height: 20px;
-    width: 20px;
-    background-size: 20px 20px;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
   }
 }
 .Section__App_and_resources {
-  padding: 1.5em;
+  padding: 1em;
   background-color: #fff;
   margin: 6em 0;
 }
@@ -430,7 +433,7 @@ b:nth-child(3).active {
 }
 .Container__scroll {
   white-space: nowrap;
-  margin: 4.3em;
+  margin: 3em 0;
 }
 .Container__scroll:hover .Container__Resource {
   opacity: 0.3;
@@ -520,7 +523,7 @@ span {
 }
 .Resource__detail {
   max-width: 1024px;
-  padding: 1.5em;
+  padding: 1em;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -551,7 +554,7 @@ span {
 }
 .screenshot-section-container {
   max-width: 1024px;
-  padding: 1.5em;
+  padding: 1em;
   margin: 0 auto;
   border-top: 1px solid #c2c2c2;
   border-bottom: 1px solid #c2c2c2;
@@ -573,7 +576,7 @@ span {
 }
 .info-detail-container {
   max-width: 1024px;
-  padding: 1.5em;
+  padding: 1em;
   margin: 0 auto;
 }
 .info-detail-container h1 {
@@ -596,7 +599,7 @@ span {
   margin: 0 auto;
   width: 100%;
   max-width: 1024px;
-  padding: 1.5em;
+  padding: 1em;
 }
 .footer__name,
 .footer {
