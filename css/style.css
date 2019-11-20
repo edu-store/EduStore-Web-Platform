@@ -426,10 +426,6 @@ b:nth-child(3).active {
   grid-area: Container__Resources;
   overflow: scroll;
   position: relative;
-  overflow-x: hidden;
-}
-.Container__Resources:hover {
-  overflow-x: scroll;
 }
 .Container__scroll {
   white-space: nowrap;
