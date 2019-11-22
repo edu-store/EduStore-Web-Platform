@@ -41,10 +41,7 @@
 .screenshot-container-imgs
     display flex
     flex-direction row
-    overflow scroll
-    overflow-x hidden
-    &:hover
-        overflow-x scroll
+    overflow scroll 
 .info-detail-container
     max-width max-width
     padding padding__container
@@ -63,12 +60,17 @@
         
 @media screen and (max-width 320px)
     .Resource__detail__logo
-        width: 7em
-        height: 7em
+        width: auto
+        height: 100%
     .Resource__detail__Container
-        width: 10em
-        height: 12em
+        width: 12em
+        height: 7em
         border-radius: 25px
+    .screenshot-section-container figure > img
+        margin-right: 0.5em;
+        height: 20em;
+        width: auto;
+
 
     
     
