@@ -20,6 +20,6 @@ McButton.addEventListener("click", function() {
 });
 
 BtnAppAlgeo.addEventListener("click", function(){
-  window.location="http://127.0.0.1:5500/ResourceDetail.html"
+  window.location="/ResourceDetail.html"
 });
 
