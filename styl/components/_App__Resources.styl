@@ -1,15 +1,26 @@
-.Section__App_and_resources
+.Section__App_and_resources, .Section__Resources__List
     padding: padding__container
     background-color: white
-    margin: 6em 0
+    margin-top: 4em
 .Container__App_and_resources
     display: grid
     grid-template-columns: repeat(4, 1fr)
     // grid-template-rows: repeat(3, auto)
-    grid-template-areas: "Titles__sections . . Buttons__directions__App" "Container__Menu__category  Container__Resources  Container__Resources Container__Resources"
-    "Container__Menu__category  Container__Resources Container__Resources Container__Resources ";
+    grid-template-areas: "Titles__sections Titles__sections Titles__sections Buttons__directions__App" "Container__Resources  Container__Resources  Container__Resources Container__Resources"
+    "Container__Resources  Container__Resources Container__Resources Container__Resources ";
     max-width max-width
     margin: 0 auto
+.Container__Resources__List
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-areas: "Titles__sections Titles__sections Titles__sections Buttons__directions__App" "Container__List__Resources Container__List__Resources  Container__List__Resources Container__List__Resources"
+    max-width max-width
+    margin: 0 auto
+.Titles__sections
+    grid-area: Titles__sections
+    color: color__dark
+    font-size: font-size-titles
+    margin-left: .5em;
 .Buttons__directions__App
     grid-area: Buttons__directions__App
     text-align: right
@@ -32,10 +43,14 @@
     grid-area: Container__Resources
     overflow scroll
     position relative
+
+.Container__List__Resources
+    grid-area: Container__List__Resources
     
+
 .Container__scroll
     white-space nowrap
-    margin 3em 0
+    margin-top 3em
     &:hover .Container__Resource
         opacity .3
         
@@ -43,9 +58,18 @@
         transform scale(1.1)
         opacity 1
         transition .5s
+.Container__List
+    margin-top 3em
+    text-align: center
+    &:hover .Container__List__resource
+        opacity .3
+        
+    & .Container__List__resource:hover
+        transform scale(1.1)
+        opacity 1
+        transition .5s
 
-
-.Container__Resource
+.Container__Resource,.Container__List__resource
     display: inline-block
     max-width 17em
     height auto
@@ -56,7 +80,7 @@
     cursor pointer
     transition 450ms all
     &:hover ~ &
-        transform translate3d(50px, 0, 0)
+       // transform translate3d(50px, 0, 0)
 .Container__Resource_Img
     
     & img
@@ -111,6 +135,10 @@
         grid-template-areas: "Titles__sections Buttons__directions__App""Container__Resources Container__Resources";
         max-width max-width
         margin: 0 auto
+    .Container__Resources__List
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-areas: "Titles__sections Titles__sections" "Container__List__Resources Container__List__Resources"
+    
     .Container__Menu__category
         display: none
     .Container__Resources
