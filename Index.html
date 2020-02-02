@@ -33,7 +33,7 @@
           </a>
           <ul class="btns__menu" id="btns__menu">
             <li>
-              <a href="#">Login</a>
+              <a id="btn__login" href="#">Login</a>
             </li>
             <li>
               <button class="btn btn-white" id="btn__Sign__up">Sign Up</button>
@@ -364,20 +364,26 @@
           />
           <span class="footer__name">Edu Store</span>
         </a>
-        <p>Copyright © 2019. All rights reserved.</p>
+        <p>Copyright © 2020. All rights reserved.</p>
 
       </div>
     </footer>
 
   </body>
 <script src="js/scripts.js"></script>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="js/config/ConfigFirebase.js"></script>
+
+<script src="js/general.js"></script>
+<script src="js/auth/autenticacion.js"></script>
+<script src="js/auth/authController.js"></script>
+
 
 <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
 
@@ -385,6 +391,4 @@
 
 <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-messaging.js"></script>
 
-<script src="js/config/ConfigFirebase.js"></script>
-<script src="js/general.js"></script>
 </html>
