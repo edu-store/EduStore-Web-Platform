@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Edu Store | Repositorio de Aplicaciones y Recursos Educativos</title>
+    <title>Edu Store | Tienda de Aplicaciones y Recursos Educativos</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css">
     <link
       rel="shortcut icon"
       href="/images/logo-favicon.ico"
@@ -354,6 +355,57 @@
         </div>
       </div>
     </section>
+    <div class="overlay center" id="overlay">
+      <div class="modal" id="modal">
+              <div class="image_container_modal center">
+                <i id="close_modal" class="icon_close"></i>
+              </div>
+              <section class="content-modal">
+                 <header class="header_modal">
+                   <div class="container__header_modal">
+                     <div id="btn_header_login" class="header_btn"><p class="mayus">Login</p></div>
+                     <div id="btn_header_signUp" class="header_btn"><p class="mayus">Crear cuenta</p></div>
+                   </div>
+                    <h1 id="title_modal" class="title_modal center">¡Bienvenido nuevamente!</h1>
+                    <p id="subtitle_modal" class="subtitle_modal center">inicia en tu cuenta</p>
+                  </header>
+                   <form class="container__form_modal">
+                      <input id="name" type="text" placeholder="Ingresa tu nombre" required>
+                      <input id="email" type="email" placeholder="Ingresa tu correo" required>
+                      <input id="password" type="password" placeholder="Ingresa tu contraseña " required>
+                      <a href="#">Has olvidado tu contraseña?</a>
+                    </form>
+                    <button id="Btn_registrar_modal" class="btn_social login">Registrarme</button>
+                    <button id="Btn_iniciar_sesion_modal" class="btn_social login"> Iniciar sesión</button>
+                    <div class="container_social_login">
+                        <div class="line_o_social">
+                          <span class="line"></span>
+                          <span class="cuadro"></span>
+                          <p class="o">o</p>
+                        </div>
+                        <button  id="btn_iniciar_facebook" class="btn_social facebook">
+                          <i class="icon fb"></i>
+                          <p class="facebook">Iniciar con Facebook</p>
+                        </button>
+                        <button id="btn_iniciar_google" class="btn_social google">
+                          <i class="icon g"></i>
+                          <p class="google">Iniciar con Google<span class="space"></span></p>
+                        </button>
+                        <button id="btn_registrar_facebook" class="btn_social facebook">
+                          <i class="icon fb"></i>
+                          <p class="facebook">Registrar con Facebook</p>
+                        </button>
+                        <button id="btn_registrar_google" class="btn_social google">
+                          <i class="icon g"></i>
+                          <p class="google">Registrar con Google<span class="space"></span></p>
+                        </button>
+          
+                    </div>
+                    
+              </section>
+
+      </div>
+  </div>
     <footer class="footer">
       <div class="container__footer">
         <a href="/" class="container__logo">

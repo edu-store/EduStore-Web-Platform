@@ -217,7 +217,6 @@ b:nth-child(3).active {
 }
 .container__menu {
   position: relative;
-  z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 'Container__Logo . Container__menu Container__menu';
@@ -252,6 +251,9 @@ b:nth-child(3).active {
 .Container__menu a {
   color: #fff;
 }
+.btns__menu {
+  z-index: 2;
+}
 .btns__menu .btn {
   margin-left: 4em;
 }
@@ -261,7 +263,6 @@ b:nth-child(3).active {
 }
 .Container__Hero {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -318,7 +319,7 @@ b:nth-child(3).active {
   right: 0;
   left: 0;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
   .Container__menu {
     text-align: center;
   }

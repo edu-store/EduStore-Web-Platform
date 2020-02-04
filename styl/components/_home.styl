@@ -11,7 +11,7 @@
     background: color__dark
 .container__menu
     position relative
-    z-index: 2
+    //z-index: 1
     display: grid
     grid-template-columns: repeat(4,1fr)
     grid-template-areas: 'Container__Logo . Container__menu Container__menu'
@@ -43,6 +43,7 @@
     & a
         color: white
 .btns__menu
+    z-index 2
     & .btn
         margin-left: 4em
 
@@ -52,7 +53,6 @@
     
 .Container__Hero
     position relative
-    z-index: 1
     display: flex
     justify-content: center
     align-items: center
@@ -104,7 +104,7 @@
     right : 0
     left : 0
 
-@media screen and (max-width: 426px)
+@media screen and (max-width: 425px)
     .Container__menu
         text-align: center
     .container__menu

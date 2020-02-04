@@ -1,9 +1,10 @@
+
 class Autentication {
     autEmailPass ( email, password) {
         firebase.auth().signInWithEmailAndPassword( email, password )
         .then( result => {
             if (result.user.emailVerified) {
-                alert(`Bienvenido ${result.user.dislayName} ya estas logeado`)
+                alert(`Bienvenido ${result.user.displayName} ya estas logeado`)
             }
             else{
                 firebase.auth().signOut()
@@ -11,7 +12,6 @@ class Autentication {
             }
         })
     }
-
 crearCuentaEmailPass (email, password, nombres){
 
     firebase
