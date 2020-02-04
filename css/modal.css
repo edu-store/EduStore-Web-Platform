@@ -1,0 +1,357 @@
+
+
+/* -----------------------
+        OVERLAY
+ -----------------------*/
+ .overlay{
+     background: rgba(0, 0, 0, 0.8);
+     position: fixed;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     opacity: 0;
+     visibility: hidden;
+     transition: 1s ease;
+     /* transition-delay: .3s */
+ }
+
+ .overlay.active{
+     opacity: 1;
+     visibility: visible;
+ }
+/* -----------------------
+        MODAL
+ -----------------------*/
+.modal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'image_container_modal content-modal';
+    width: 100%;
+    max-width: 50em;
+    background-color: white;
+    margin: 0 1em;
+    z-index: 3;
+    /*  box-shadow x y */
+    /* box-shadow: 1px 1px 10px rgba(203, 203, 203, 0.9);  */
+   
+    /* animation: animationIn 1s forwards; */
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.image_container_modal{
+    grid-area: image_container_modal;
+    padding: 2em;
+    box-sizing: border-box;
+    background-image: url('../images/hero-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-modal{
+    grid-area: content-modal;
+    
+}
+
+.container__form_modal, .container_social_login{
+    padding: 1em 2em;
+
+}
+
+.container__header_modal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 3em;
+
+}
+
+
+.header_btn{
+    background: #c2c2c2;
+    color: red;
+    padding: .7em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header_btn p{
+    
+    color: white;
+    font-weight: bold;
+  
+}
+
+.header_btn.active{
+    background: #3e80ff;
+    
+}
+.title_modal{
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.subtitle_modal{
+    margin-bottom: 2em;
+}
+.mayus{
+    text-transform: uppercase;
+}
+.container__form_modal input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    border-bottom:  1.3px solid #c2c2c2;
+    margin-bottom: 1em;
+    transition: .5s all;
+    font-size: .9em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container__form_modal input:focus{
+
+    border-bottom:  1.5px solid #3e80ff;
+}
+#btn_iniciar_facebook,
+#btn_iniciar_google,
+#btn_registrar_facebook,
+#btn_registrar_google,
+#name, #Btn_registrar_modal, #Btn_iniciar_sesion_modal{
+    display: none;
+}
+#btn_iniciar_facebook.active,
+#btn_iniciar_google.active,
+#btn_registrar_facebook.active,
+#btn_registrar_google.active,
+#name.active, #Btn_registrar_modal.active, #Btn_iniciar_sesion_modal.active{
+    display: flex;
+}
+
+
+
+.container__form_modal a{
+    display: flex;
+    justify-content: flex-end;
+    color:#c2c2c2;
+    font-size: .9em;
+    margin-bottom: 3em;
+}
+
+.container__form_modal a:hover{
+   
+    color:#3e80ff;
+    
+}
+
+.container__form_modal button{
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.line_o_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2em ;
+    
+    
+}
+
+.line{
+   
+    border: 1.5px solid #c2c2c2;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    position: relative;
+    padding-right:15em ;
+    
+    
+}
+
+.o{
+    font-size: 1.5em;
+    position: fixed;
+    text-align: center;
+    font-weight: bolder;
+
+ 
+}
+.cuadro{
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    padding: .8em;
+    background-color: white;
+}
+
+.btn_social{
+    
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: .7em .7em;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0px 7px 15px -10px rgba(0,0,0,0.75);
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    transition: .5s ease;
+    cursor: pointer;
+    border: 0;
+}
+.btn_social:active, .icon_close:active{
+    transform: scale(.9);
+}
+.btn_social.login{
+    border: 0;
+    background-color: #3e80ff;
+    color:white
+}
+.btn_social .facebook{
+  color: white
+}
+
+.btn_social.facebook{
+    
+    background-color: #3e80ff;
+}
+
+
+.btn_social.google{
+    color: black;
+    background-color:white;
+}
+
+.btn_social .google{
+    color: black
+}
+.icon_close{
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    background-image: url('../images/close.svg');
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: .3s ease-in;
+}
+.icon{
+    
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    padding-right: 1.5em;
+    margin-right: .5em;
+
+}
+.icon.fb{
+    background-image: url('../images/facebook.svg');
+    border-right: 1px solid white;
+
+}
+.icon.g{
+    background-image: url('../images/google.svg');
+    border-right: 1px solid black;
+}
+.space{
+    padding: 10px;
+}
+/* -------------------------------------
+        ANIMATIONS
+----------------------------------------*/
+
+@keyframes animationIn{
+    from{
+        transform: translateY(-3000px)
+    }
+    60%{
+        transform: translateY(25px)
+    }
+    75%{
+        transform: translateY(-10px)
+    }
+    90%{
+        transform: translateY(5px)
+    }
+    to{
+        transform: translateY(0)
+    }
+}
+
+@keyframes animationOut{
+    from{
+        transform: translateY(5px)
+        }
+    60%{
+        transform: translateY(-10px)
+    }
+    75%{
+        transform: translateY(25px)
+    }
+    to{
+        transform: translateY(-3000px)
+    }
+}
+
+/* ---------------------------------
+            RESPONSIVE
+----------------------------------- */
+
+ @media screen and (max-width:426px){
+
+.logo{
+    width: 20em;
+ }
+
+
+.menu{
+    margin-bottom: 2em;
+    
+}
+
+}
+@media screen and (max-width: 768px){
+    .btn_social{
+
+        width: 80%;
+    }
+}
+@media screen and (max-width:425px){
+    .modal{
+        
+        grid-template-columns: 100%;
+        grid-template-areas: 'content-modal';
+        margin: 1.5em;
+        
+    }
+
+    .btn_social{
+
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width:320px){
+    .modal{
+        
+        width: 95%;
+        margin: 1em;
+        
+    }
+    .tcontainer__header_modal{
+        display: none;
+        visibility: hidden;
+    }
+    
+}
