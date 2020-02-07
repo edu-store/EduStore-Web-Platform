@@ -452,25 +452,18 @@ b:nth-child(3).active {
 .Container__scroll {
   white-space: nowrap;
   margin-top: 3em;
+  text-align: center;
 }
-.Container__scroll:hover .Container__Resource {
-  opacity: 0.3;
-}
-.Container__scroll .Container__Resource:hover {
+.Container__scroll .Container__List__resource:hover {
   transform: scale(1.1);
-  opacity: 1;
   transition: 0.5s;
 }
 .Container__List {
   margin-top: 3em;
   text-align: center;
 }
-.Container__List:hover .Container__List__resource {
-  opacity: 0.3;
-}
 .Container__List .Container__List__resource:hover {
   transform: scale(1.1);
-  opacity: 1;
   transition: 0.5s;
 }
 .Container__Resource,
@@ -530,7 +523,7 @@ span {
   font-weight: bold;
 }
 @media screen and (max-width: 768px) {
-  .Container__Resource {
+  .Container__Resources__List {
     max-width: 15em;
     margin: 0.5em;
   }

@@ -87,7 +87,7 @@ BtnSignUp.addEventListener('click', () => {
   overlay.classList.add('active');
   activeMcButtom();
   ActiveSignUp();
-  insertApp()
+
  
 
 })
@@ -113,6 +113,8 @@ ActiveSignIn = () => {
   title_modal.innerHTML = "¡Bienvenido nuevamente!";
   subtitle_modal.innerHTML = "inicia en tu cuenta";
   Inputname.classList.remove('active');
+  btn_header_signUp.classList.remove("active")
+  btn_header_login.classList.add("active")
   Btn_registrar_modal.classList.remove('active');
   Btn_iniciar_sesion_modal.classList.add('active');
 
@@ -125,7 +127,7 @@ ActiveSignIn = () => {
 
 
 btn_header_signUp.addEventListener('click', () =>{
-  ActiveSignUp();
+  ActiveSignUp(); 
 })
 
 btn_header_login.addEventListener('click', () =>{

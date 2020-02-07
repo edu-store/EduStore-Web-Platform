@@ -51,22 +51,17 @@
 .Container__scroll
     white-space nowrap
     margin-top 3em
-    &:hover .Container__Resource
-        opacity .3
+    text-align: center
         
-    & .Container__Resource:hover
+    & .Container__List__resource:hover
         transform scale(1.1)
-        opacity 1
         transition .5s
 .Container__List
     margin-top 3em
     text-align: center
-    &:hover .Container__List__resource
-        opacity .3
-        
+   
     & .Container__List__resource:hover
         transform scale(1.1)
-        opacity 1
         transition .5s
 
 .Container__Resource,.Container__List__resource
@@ -126,7 +121,7 @@
          font-weight: bold
 
 @media screen and (max-width: 768px)
-    .Container__Resource
+    .Container__Resources__List
         max-width 15em
         margin: .5em
 @media screen and (max-width: 426px)

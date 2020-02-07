@@ -54,8 +54,8 @@
             class="Hero__search border-none"
             type="text"
             placeholder="Escribe el nombre de una app o un recurso"
-          />
-          <button id="Search-hero" class="Hero__icon__search"></button>
+            />
+            <button id="Search-hero" class="Hero__icon__search"></button>
         </form>
       </div>
     </section>
@@ -106,17 +106,17 @@
     </section>
     <div class="overlay center" id="overlay">
       <div class="modal" id="modal">
-              <div class="image_container_modal center">
-                <i id="close_modal" class="icon_close"></i>
-              </div>
+              <i id="close_modal" class="icon_close"></i>
               <section class="content-modal">
                  <header class="header_modal">
                    <div class="container__header_modal">
                      <div id="btn_header_login" class="header_btn"><p class="mayus">Login</p></div>
                      <div id="btn_header_signUp" class="header_btn"><p class="mayus">Crear cuenta</p></div>
                    </div>
-                    <h1 id="title_modal" class="title_modal center">¡Bienvenido nuevamente!</h1>
-                    <p id="subtitle_modal" class="subtitle_modal center">inicia en tu cuenta</p>
+                   <div class="container_modal">
+                     <h1 id="title_modal" class="title_modal center">¡Bienvenido nuevamente!</h1>
+                     <p id="subtitle_modal" class="subtitle_modal center">inicia en tu cuenta</p>
+                   </div>
                   </header>
                    <form class="container__form_modal">
                       <input id="name" type="text" placeholder="Ingresa tu nombre" required>
@@ -124,8 +124,11 @@
                       <input id="password" type="password" placeholder="Ingresa tu contraseña " required>
                       <a href="#">Has olvidado tu contraseña?</a>
                     </form>
-                    <button id="Btn_registrar_modal" class="btn_social login">Registrarme</button>
-                    <button id="Btn_iniciar_sesion_modal" class="btn_social login"> Iniciar sesión</button>
+                    <div class="container_modal">
+                      <button id="Btn_registrar_modal" class="btn_social login">Registrarme</button>
+                      <button id="Btn_iniciar_sesion_modal" class="btn_social login"> Iniciar sesión</button>
+
+                    </div>
                     <div class="container_social_login">
                         <div class="line_o_social">
                           <span class="line"></span>
