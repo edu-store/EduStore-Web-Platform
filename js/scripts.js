@@ -29,6 +29,7 @@ const Btn_iniciar_sesion_modal =  document.querySelector('#Btn_iniciar_sesion_mo
  const btn_registrar_google = document.querySelector('#btn_registrar_google');
 
 
+
 close_modal.addEventListener('click', () => {
   HideModal()
 })
@@ -59,9 +60,6 @@ McButton.addEventListener("click", function() {
   McBar3.classList.toggle("active");
 });
 
-BtnAppAlgeo.addEventListener("click", function(){
-  window.location="/ResourceDetail.html"
-});
 
 HideModal = () => {
   Modal.style.animation = 'animationOut .8s forwards';
@@ -89,6 +87,8 @@ BtnSignUp.addEventListener('click', () => {
   overlay.classList.add('active');
   activeMcButtom();
   ActiveSignUp();
+  insertApp()
+ 
 
 })
 
@@ -106,6 +106,7 @@ ActiveSignUp = () =>{
   btn_iniciar_google.classList.remove('active')
   btn_registrar_facebook.classList.add('active')
   btn_registrar_google.classList.add('active')
+
 }
 
 ActiveSignIn = () => {
@@ -119,6 +120,7 @@ ActiveSignIn = () => {
   btn_registrar_google.classList.remove('active')
   btn_iniciar_facebook.classList.add('active')
   btn_iniciar_google.classList.add('active')
+  
 }
 
 
