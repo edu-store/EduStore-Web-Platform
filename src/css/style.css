@@ -522,12 +522,6 @@ b:nth-child(3).active {
 span {
   font-weight: bold;
 }
-@media screen and (max-width: 768px) {
-  .Container__Resources__List {
-    max-width: 15em;
-    margin: 0.5em;
-  }
-}
 @media screen and (max-width: 426px) {
   .Container__App_and_resources {
     grid-template-columns: repeat(2, 1fr);
