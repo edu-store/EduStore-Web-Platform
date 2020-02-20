@@ -25,7 +25,7 @@
  -----------------------*/
 .modal{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:50% 50%;
     grid-template-areas: 'content-modal content-modal';
     width: 35%;
     max-width: 40em;
@@ -36,6 +36,12 @@
     /* box-shadow: 1px 1px 10px rgba(203, 203, 203, 0.9);  */
    
     /* animation: animationIn 1s forwards; */
+}
+
+.modal.app{
+    width: 45%;
+    position: relative;
+
 }
 .center{
     display: flex;
@@ -55,6 +61,12 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: white;
+    
+}
+
+.content-modal.app{
+
+    padding: 2.5em;
     
 }
 
@@ -249,6 +261,11 @@
     right: -30px;
     transition: .3s ease-in;
 
+}
+icon_close.app{
+    position: absolute;
+    right: -20px;
+    right: -30px;
 }
 .icon{
     

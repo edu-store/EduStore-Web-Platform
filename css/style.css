@@ -418,7 +418,6 @@ b:nth-child(3).active {
   grid-area: Titles__sections;
   color: #102434;
   font-size: 2.5em;
-  margin-left: 0.5em;
 }
 .Buttons__directions__App {
   grid-area: Buttons__directions__App;
@@ -556,9 +555,11 @@ span {
 }
 .Resource__detail__Container {
   overflow: hidden;
-  border-radius: 50px;
+  border-radius: 30px;
   cursor: pointer;
   margin-right: 2em;
+  height: 10em;
+  width: 10em;
 }
 .Resource__detail__logo {
   width: 15em;
@@ -640,6 +641,9 @@ span {
     height: 20em;
     width: auto;
   }
+}
+.info-detail-container p {
+  margin-left: 0.5em;
 }
 .footer,
 .container__footer {

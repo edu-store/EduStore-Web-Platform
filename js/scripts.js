@@ -8,6 +8,13 @@ const BtnAppAlgeo = document.getElementById("AppAlgeo");
 const Modal = document.querySelector('#modal');
 const Overlay = document.querySelector('#overlay');
 const close_modal = document.querySelector('#close_modal');
+
+
+const modal_app = document.querySelector('#modal_app');
+const modal_showInfo = document.querySelector('#modal_showInfo');
+
+const Overlay_app = document.querySelector('#overlay_app');
+const close_modal_app = document.querySelector('#close_modal_app');
 //Home
 const BtnLogIn = document.getElementById("btn__login");
 const BtnSignUp = document.querySelector('#btn__Sign__up')
@@ -29,6 +36,15 @@ const Btn_iniciar_sesion_modal =  document.querySelector('#Btn_iniciar_sesion_mo
  const btn_registrar_google = document.querySelector('#btn_registrar_google');
 
 
+ modal_showInfo.addEventListener('click', ()=> {
+  modal_app.style.animation = 'animationIn 1s forwards';
+  overlay_app.classList.add('active');
+ })
+ close_modal_app.addEventListener('click', ()=> {
+  modal_app.style.animation = 'animationOut .8s forwards';
+  overlay_app.style.transitionDelay = '.8s';
+  overlay_app.classList.remove('active');
+ })
 
 close_modal.addEventListener('click', () => {
   HideModal()
