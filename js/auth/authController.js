@@ -20,3 +20,8 @@ Btn_iniciar_sesion_modal.addEventListener('click', () => {
         HideModal();
 
 })
+
+btn_iniciar_google.addEventListener('click', () => {
+    const auth = new Autentication();
+    auth.authCuentaGoogle();
+})
