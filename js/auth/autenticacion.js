@@ -50,12 +50,27 @@ crearCuentaEmailPass (email, password, nombres){
         .then(result => {
           //$('#avatar').attr('src', result.user.photoURL)
           //$('.modal').modal('close')
-          HideModal(),
+          HideModal()
           alert(`Bienvenido ${result.user.displayName} !! `)
         })
         .catch(error =>{
           console.error(error)
           alert(`Error al autenticarse con google: ${error} `)
+        })
+      }
+
+      authCuentaFacebook () {
+        const provider = new firebase.auth.FacebookAuthProvider();
+    
+        firebase.auth().signInWithPopup(provider).then(result => {
+          //$('#avatar').attr('src', result.user.photoURL)
+          //$('.modal').modal('close')
+          HideModal()
+          alert(`Bienvenido ${result.user.displayName} !! `)
+        })
+        .catch(error =>{
+          console.error(error)
+          alert(`Error al autenticarse con facebook: ${error} `)
         })
       }
 }

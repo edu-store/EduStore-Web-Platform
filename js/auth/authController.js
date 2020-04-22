@@ -21,7 +21,12 @@ Btn_iniciar_sesion_modal.addEventListener('click', () => {
 
 })
 
-btn_iniciar_google.addEventListener('click', () => {
+btn_registrar_google.addEventListener('click', () => {
     const auth = new Autentication();
     auth.authCuentaGoogle();
+})
+
+btn_registrar_facebook.addEventListener('click', () =>{
+    const auth = new Autentication();
+    auth.authCuentaFacebook();
 })
