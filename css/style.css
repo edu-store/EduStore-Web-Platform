@@ -241,7 +241,7 @@ b:nth-child(3).active {
   margin-right: 1em;
 }
 .container__logo span {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
 .Container__menu {
@@ -278,7 +278,7 @@ b:nth-child(3).active {
   margin-bottom: 0.3em;
 }
 .Container__Hero .Hero__texts p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 1em;
   color: #3e80ff;
 }
@@ -295,7 +295,7 @@ b:nth-child(3).active {
   text-align: left;
   padding: 1em;
   font-family: 'Roboto';
-  font-size: 1.2em;
+  font-size: 1em;
   color: #c2c2c2;
 }
 .Hero__icon__search {
@@ -417,7 +417,7 @@ b:nth-child(3).active {
 .Titles__sections {
   grid-area: Titles__sections;
   color: #102434;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .Buttons__directions__App {
   grid-area: Buttons__directions__App;
@@ -431,7 +431,7 @@ b:nth-child(3).active {
 }
 .Menu__category_items li {
   display: block;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   padding: 0.8em;
   border-radius: 0 15px 15px 0;
@@ -468,7 +468,7 @@ b:nth-child(3).active {
 .Container__Resource,
 .Container__List__resource {
   display: inline-block;
-  max-width: 17em;
+  width: 17em;
   height: auto;
   overflow: hidden;
   border-radius: 20px;
@@ -491,7 +491,7 @@ b:nth-child(3).active {
   margin-bottom: 0.5em;
 }
 .Container__texts_resource p {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 0.5em;
 }
 .rating {
@@ -523,7 +523,6 @@ span {
 }
 @media screen and (max-width: 768px) {
   .Container__Resources__List {
-    max-width: 15em;
     margin: 0.5em;
   }
 }
@@ -566,12 +565,12 @@ span {
   height: 15em;
 }
 .Resource__detail__title {
-  font-size: 2.5em;
+  font-size: 2em;
   color: #102434;
   margin-bottom: 0.3em;
 }
 .Resource__detail__subtitle {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #3e80ff;
   margin-bottom: 0.3em;
 }

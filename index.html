@@ -34,10 +34,10 @@
           </a>
           <ul class="btns__menu" id="btns__menu">
             <li>
-              <a id="btn__login" href="#">Login</a>
+              <a id="btn__login" href="#">Iniciar sesion</a>
             </li>
             <li>
-              <button class="btn btn-white" id="btn__Sign__up">Sign Up</button>
+              <button class="btn btn-white" id="btn__Sign__up">Registrarte</button>
             </li>
           </ul>
         </nav>
@@ -90,7 +90,7 @@
     </section>
     <section class="Section__Resources__List">
       <div class="Container__Resources__List">
-        <h1 id="modal_showInfo" class="Titles__sections">
+        <h1 class="Titles__sections">
            Todas las Apps
         </h1>
         <div class="Buttons__directions__App">
@@ -161,23 +161,16 @@
   <div class="overlay app center" id="overlay_app">
     <div class="modal app" id="modal_app">
             <i id="close_modal_app" class="icon_close"></i>
-            <section class="content-modal app">
+      <section id="content_modal" class="content-modal app">
               <section class="Resource__detail">
                
-                    <img  class="Resource__detail__Container" src="/images//ImagesResources/Algeo.webp" alt="" class="Resource__detail__logo">
+                    <img id="img_link_app" class="Resource__detail__Container" src="" alt="" class="Resource__detail__logo">
     
                 <div class="Resource__detail__info">
-                    <h1 class="Resource__detail__title">Algeo:Cal. Gráfica</h1>
-                    <p class="Resource__detail__subtitle">Matemática</p>
+                    <h1 id="title_app" class="Resource__detail__title"></h1>
+                    <p id="subtitle_app" class="Resource__detail__subtitle"></p>
                     <div class="container__rating">
-                      <div class="rating">
-                             <span>☆</span><span>☆</span><span>☆</span><span>☆</span
-                             ><span>☆</span>
-                       </div>
-                       <div class="rating__count">
-                             <span>5</span>
-                             <span>(15, 012)</span>
-                       </div>
+                     
                     </div>
                      <a href="/images/Algeo.webp" download="Algeo.apk" class="btn btn-blue">Descargar</a>
                 </div>
@@ -185,18 +178,12 @@
             <section class="info-detail-section">
               <div class="info-detail-container">
                  <h1 class="Titles__sections">Descripción</strong></h1>
-                 <p>Calculadora semi cientifica, con gráficos en el plano cartesiano.<br>
-                   Usa las siguientes funciones únicas para ayudarte con tu clase de cálculo y álgebra:  
-                   </p>
-                   <ul class="list_container">
-                       <li>* Diferenciación simbólica</li>
-                       <li>* Integrales definidas</li>
-                       <li>* Cálculo de series de Taylor</li>
-                       <li>* Resolución de ecuaciones</li>
-                   </ul>
+                 <p id="description_app"></p>
+
                </div>
-            </section>            
+            </section>      
             </section>
+            
 
     </div>
 </div>
